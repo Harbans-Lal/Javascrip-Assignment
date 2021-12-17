@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array Sort in JS !</title>
+</head>
+<body>
+	<h1>Array Sort !</h1>
+	<h3>Sorting array in ascending and descendig order !</h3>
+	<p id="demo1"></p>
+	<script type="text/javascript">
+		const arr  = ["ball","zebra","apple","queen"];
+		document.getElementById('demo1').innerHTML = 
+		"we have an array : "+arr +"<br>"+
+		"after sorting array in ascending ordreit will look like: "+arr.sort() + "<br>"+
+		"after sorting array in descendig ordre it will look like: "+arr.reverse();
+	</script>
+	<h3>sort a number in ascending order!</h3>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<script type="text/javascript">
+		const num  = [40 ,20,62,38,80,70,100];
+		document.getElementById('demo2').innerHTML = "the number array is: "+num;
+		num.sort(function(a,b){return a-b})
+		document.getElementById("demo3").innerHTML="sorting array number in ascending will lookmlike: "+num;
+
+	</script>
+	<h3>sort a nummber array list in descendig order !</h3>
+	<p id="demo4"></p>
+	<p id="demo5"></p>
+	<script type="text/javascript">
+		const num1 = [80,456 ,365, 68, 109 ,1];
+		document.getElementById("demo4").innerHTML = "we have  number array: "+num1 ;
+		num1.sort(function (a,b){return b - a});
+		document.getElementById("demo5").innerHTML = "after sorting number array in descendig order it will look like: "+num1;
+	</script>
+<h3>sort number alphabetically !</h3>
+<p id="demo6"></p>
+<script type="text/javascript">
+	const num2 = [ 50, 60, 850 ,1, 30 ,230 ];
+	document.getElementById("demo6").innerHTML =
+	"we have number array: "+num2 + "<br>" +
+	"after sorting it alphabetically we get: "+num2.sort();
+</script>
+<h3>Sort array number in random order !</h3>
+<p id="demo7"></p>
+<script type="text/javascript">
+	const num3 = [50, 564 ,546 ,852, 369, 147,27];
+	document.getElementById("demo7").innerHTML =
+	"we have number array: "+num3 +"<br>" +
+
+	"after sorting array in random order it will look like: "+num3.sort(function (a,b){return 0.7 -Math.random()}) + "<br>";
+</script>
+<h3>Find the lowest number in array !</h3>
+<p id="demo9"></p>
+<p id="demo10"></p>
+<script type="text/javascript">
+	const num4 = [1221, 454 ,879865, 455,66];
+	document.getElementById("demo9").innerHTML="we have array number list: "+num4;
+	num4.sort(function(a,b){return a-b});
+	document.getElementById("demo10").innerHTML ="the lowsert number in this array is: "+num4[0];
+
+</script>
+<h3>Find the highest value in an array!</h3>
+<p id="demo11"></p>
+<p id="demo12"></p>
+<script type="text/javascript">
+	const num5 = [454,46546,865, 5456, 5823,48465];
+	document.getElementById("demo11").innerHTML="we have a array list: "+num5 ;
+	num5.sort(function(a,b){return b-a});
+	document.getElementById("demo12").innerHTML ="the highest numbr in this array is: "+num5[0];
+</script>
+<h3>findig max value by using math max function: </h3>
+<p id="demo13"></p>
+<script type="text/javascript">
+	const noname = [50 , 60 ,40 ,100];
+	document.getElementById("demo13").innerHTML=
+	"we have a array: "+noname +"<br>"+
+	"after finding max vaue using math.math funcction: "+maxNum(noname);
+	function maxNum(arr){
+		return Math.max.apply(null,arr);
+	}
+</script>
+<h3>finding the small vlaue using math.min function !</h3>
+<p id="demo14"></p>
+<script type="text/javascript">
+	const num7 = [50 , 55 , 40 ,80];
+	document.getElementById("demo14").innerHTML=
+	"we have a array list: "+num7 +"<br>"+
+	"and the min vlaue usin math.min is: "+mathMin(num7);
+	function mathMin(arrg){
+		return Math.min.apply(null ,arrg);
+	}
+</script>
+<h3>Homemade method to fide the smallest value in array !</h3>
+<p id="demo15"></p>
+
+<script>
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo15").innerHTML =
+"we have a array list: "+points + "<br>"+
+ "and the min value in this array is: "+myArrayMin(points);
+
+function myArrayMin(arr) {
+  let len = arr.length;
+  let min = Infinity;
+  while (len--) {
+    if (arr[len] < min) {
+      min = arr[len];
+    }
+  }
+  return min;
+}
+</script>
+<h3>Finding the max value using homemade method !</h3>
+<p id="demo16"></p>
+<script type="text/javascript">
+	const room  =[45 , 565 ,456 , 852, 20];
+	document.getElementById("demo16").innerHTML =
+	"we have a number list: "+room +"<br>"+
+	"and the max vlaue in this array is: "+myArrayMax(room);
+
+	function myArrayMax(arg){
+		let len = arg.length ;
+		let max =-Infinity ;
+		while (len--){
+			if(arg[len]>max){
+				max = arg[len];
+			}
+		}
+		return max ;
+	}
+</script>
+
+<h3>Sort object by numeric properties !</h3>
+<p id="demo17"></p>
+<button type="button" onclick="jsObjFun()">Sort cars by years !</button>
+<script type="text/javascript">
+	const obj = [
+	 {type:"volvo" ,year:2016} ,
+	 {type:"audi" , year:2014},
+	 {type:"bmw", year:2010}
+	];
+	displayObj();
+	function jsObjFun(){
+	obj.sort(function(a,b){return a.year - b.year});
+	displayObj();
+	}
+
+	function displayObj(){
+		document.getElementById('demo17').innerHTML =
+		obj[0].type + " " + obj[0].year +"<br>"+
+		obj[1].type + " " + obj[1].year +"<br>"+
+		obj[2].type + " " + obj[2].year ;
+	}
+</script>
+
+
+<h3>Sort object by string properties !</h3>
+<button type="button" onclick="stringFun()">click here to sort obj in string properties !</button>
+<p id="demo18"></p>
+<script type="text/javascript">
+	const cars1 = [
+	{type:"VOLVO" , year:2020},
+	{type:"SAAB" ,year:2018},
+	{type:"BMW" ,year:2019}
+	];
+	displayCars() ;
+
+	function stringFun(){
+		cars1.sort(function(m,n){
+			let x = m.type.toLowerCase();
+			let y = n.type.toLowerCase();
+			if(x < y) {return -1;}
+			if(x > y) {return 1;}
+			return 0 ;
+		});
+		displayCars();
+		//console.log(displayCars());
+	}
+
+
+	function displayCars(){
+		document.getElementById("demo18").innerHTML = 
+		cars1[0].type + " "+ cars1[0].year+ "<br>" +
+		cars1[1].type + " "+cars1[1].year + "<br>"+
+		cars1[2].type + " "+cars1[1].year;
+
+	}
+</script>
+
+</body>
+</html>

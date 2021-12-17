@@ -1,0 +1,17 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: gren;
+}
+.numbers {
+	font-size: 40px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all linear 0.2s;
+}
+/*.numbers:hover {
+	font-size: 45px;
+}*/
+#input-Feild {
+	width: 35%;
+}

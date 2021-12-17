@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Datatype in JS !!</title>
+</head>
+<body>
+	<h1> Datatype in JS !!</h1>
+	<h4>number </h4>
+	<p id="eg1"></p>
+	<p id="eg1.1"></p>
+	<p id="eg1.2"></p>
+	<p id="eg1.3"></p>
+	<script type="text/javascript">
+		var num = 5;
+		var num1 = 10.5;
+		document.getElementById('eg1').innerHTML="the value of num is (num is 5): "+num;
+		document.getElementById('eg1.1').innerHTML="the type of num is (num is 5): "+typeof(num);
+
+		document.getElementById('eg1.2').innerHTML="the value of num1 is(num1 = 10.5): "+num1;
+		document.getElementById('eg1.3').innerHTML="the typeof num1 is(num1 = 10.5): "+typeof(num1);
+
+	</script>
+	<h4>String</h4>
+	<p id="eg2"></p>
+	<p id="eg2.1"></p>
+	<script type="text/javascript">
+		var str = "javascript";
+		document.getElementById('eg2').innerHTML="the value of str is: "+str;
+		document.getElementById('eg2.1').innerHTML="the type of str is: "+typeof(str);
+	</script>
+
+	<h3>Array</h3>
+	<p id="3"></p>
+	<p id="3.1"></p>
+	<script type="text/javascript">
+		const arr = new Array("mon","tue","wed");
+		document.getElementById('3').innerHTML="the value of a arr is :"+arr;
+		document.getElementById('3.1').innerHTML="the type of arr is: "+typeof(arr);
+	</script>
+
+	<h3>Objects in javascrpt</h3>
+	<p>in we have obj list of obj ={fname="jello",lname="world",age=50}</p>
+	<p id="4"></p>
+	
+	<script type="text/javascript">
+		const obj = {fname:"hello",lname:"world",age:50};
+		document.getElementById('4').innerHTML="the value of 'obj.age' is is: "+obj.age;
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dates in js !</title>
+</head>
+<body>
+	<h1>Dates in JS !!!</h1>
+	<h3>Use date() to show today date and time!</h3>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		document.getElementById('demo').innerHTML="today date is: "+Date() ;
+	</script>
+
+	<h3>Use getFullYear() to get the full year date !</h3>
+	<p id="demo1"></p>
+	<script type="text/javascript">
+		const d = new Date();
+		document.getElementById('demo1').innerHTML="the full year date is: "+d.getFullYear();
+	</script>
+   <h3>getTime() return the time in milisecond till then:</h3>
+   <p id="demo2"></p>
+   <script type="text/javascript">
+   	const t = new Date();
+   	document.getElementById('demo2').innerHTML="the time in milisecond is: "+t.getTime();
+   </script>
+   <h3>setFullYear() method set the full year to date object!</h3>
+   <p id="demo3"></p>
+   <script type="text/javascript">
+   	const set = new Date();
+   	set.setFullYear(2019);
+   	document.getElementById('demo3').innerHTML="we have set the year 2019 and the result is: "+set;
+   </script>
+   <h3>the toUtcString() method convert a date to (according to utc) string.</h3>
+   <p id="demo4"></p>
+   <script type="text/javascript">
+   	const utc = new Date();
+   	utc.toUTCString();
+   	document.getElementById('demo4').innerHTML="the utc conver of the time is: "+utc;
+   </script>
+   <h3>grtDay() to get the day as weekly number !</h3>
+   <p id="demo5"></p>
+   <script type="text/javascript">
+   	const dayH  = new Date();
+   	document.getElementById('demo5').innerHTML="the weekday in  number is: "+dayH.getDay();
+   </script>
+
+
+
+
+   <h3>use getDay() method and array to print the day as a name !</h3>
+   <p id="demo7"></p>
+   <script type="text/javascript">
+   	const ton = new Date();
+   	const days = ["Sunday","Sonday","Suesday","Sednesday","Shursday","Friday","Saturday"];
+    document.getElementById("demo7").innerHTML="the day in name is: "+days[ton.getDay()];
+   </script>
+
+<h3>JS clock !</h3>
+<p id="demo8"></p>
+<script>
+function startTime() {
+  const today = new Date();
+  let hr = today.getHours();
+  let mt = today.getMinutes();
+  let sd = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('demo8').innerHTML =  hr + ":" + mt + ":" + sd;
+  setTimeout(startTime, 1000);
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>What can JS do ?</title>
+</head>
+<body>
+
+	<h1>What can js do?</h1>
+	<h2>Js can change the content of HTML</h2>
+
+	<p id="demo">this is html line and js can change the content..</p>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML='this is changed by the javscript !' ">Click here to chnage content !</button>
+
+
+	<h2>Javascript can change the HTML attribute!</h2>
+
+	<img id="mybulb" src="img/pic_bulboff.gif" style="width: 100px;">
+
+	<button type="button" onclick="document.getElementById('mybulb').src='img/pic_bulbon.gif'">turn on the button !</button>
+
+	<button type="button" onclick="document.getElementById('mybulb').src='img/pic_bulboff.gif'">Turn off the button !</button>
+
+	<h2>Js can also change the css property !</h2>
+	<p id="demo2">This some para in html and js can change their css !</p>
+	<button type="button" onclick="document.getElementById('demo2').style.fontSize='35px'">click here to change css font size!</button> <!--we can change css property by (style.fontSize='value')-->
+
+
+	<h3>Js can hide the html element !</h3>
+	<p id="demo3">this is somthing in html and js can hide it when i will click on the button !</p>
+	<button type="button" onclick="document.getElementById('demo3').style.display='none'">Clik here to hide this para !</button>
+
+
+	<h3>Js can also show the hidden content in  html !</h3>
+
+	<p id="demo4" style="display: none;">Here is somthing hiddne it will only appear if js run!</p>
+	<button type="button" onclick="document.getElementById('demo4').style.display='block'">Click here to display hidden content!</button>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Object</title>
+
+</head>
+<body>
+	<h1>object in JS</h1>
+	<p>in JS obj is decalre inside the curly bracketrs {} and isnide our curly brackets w ehave a single value with unique key like  obj= {hello:"world"} here hello is key  and world is the value if we want to display it call it via object like obj.hello and world will display on screen !!</p>
+
+	<h3>creatre js object!!</h3>
+	<p id="eg1"></p>
+	<script type="text/javascript">
+		var obj = {fname:"hello",lname:"world",age:70};
+		document.getElementById('eg1').innerHTML="the vale of fname is (obj.fname): "+obj.fname;
+		console.log(obj);
+
+	</script>
+
+
+	<h3>we can concate two obj value togathe  via function a call it!</h3>
+	<p id="eg2"></p>
+	<script type="text/javascript">
+		const days ={
+			first :"INd",
+			last :"ia",
+			fullname: function(){
+				return this.first+ this.last;
+			}
+
+		};
+		document.getElementById('eg2').innerHTML="the output of first + last is: "+days.fullname();
+ 
+	</script>
+	
+
+
+
+</body>
+</html>

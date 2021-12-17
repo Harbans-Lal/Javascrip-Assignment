@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array iteration in js !</title>
+</head>
+<body>
+	<h1>Array iteration in  JS !</h1>
+	<h3>Array.forEaach !!</h3>
+	<p>A array function take three argument at a time which is value ,index and array itself .So to print somthing these agrument you to put a argument at first to run that argument for eg function fun(index,value,array) inthis case if we pass onlue one argument in our statement the index value of arrauy will be prited !!</p>
+
+	<p id="demo1"></p>
+	<script type="text/javascript">
+		const number  = [20 , 40 ,35 ,56 , 77 ,88, 66];
+		let txt = "";
+
+		number.forEach(iterationIsFun);
+		document.getElementById("demo1").innerHTML=txt ;
+
+		function iterationIsFun(value ,index ,array){
+			txt += value +"<br>";
+
+		}
+ 	</script>
+ 	<h3>Array map</h3>
+ 	<p>Array map create a new array list by perfoming array operation on each element !</p>
+ 	<p id="demo2"></p>
+ 	<script type="text/javascript">
+ 		const number1 = [20 , 50 ,33, 24 , 66];
+ 		let number2 =number1.map(jsMapFun);
+ 		document.getElementById("demo2").innerHTML =
+ 		"we have number list which is: "+number1 + "<br>"+
+ 		"and after multifying the array by 2 the result is: "+number2 ;
+
+ 		function jsMapFun(value ,index ,array){
+ 			return value * 2 ;
+
+ 		}
+ 	</script>
+
+
+ 	<h3>Array filter method !</h3>
+ 	<p id="demo3"></p>
+ 	<script type="text/javascript">
+ 		const numList = [12 ,15 , 19, 25, 13 ,15.5 ,61];
+ 		let over20 = numList.filter(jsFilter);
+ 		document.getElementById("demo3").innerHTML = 
+ 		"we have a array number list: "+numList + "<br>"+
+ 		"after getting the value which is greater than 20 is: "+over20 ;
+
+
+ 		function jsFilter(value ,index ,array){
+ 			return value > 20 ;
+
+ 		}
+ 	</script>
+ 	<h3>array.reduce() method !</h3>
+ 	<p>this method will add all the vlaue togatehr and privide us the total !!</p>
+ 	<p id="demo4"></p>
+ 	<script type="text/javascript">
+ 		const number3 = [1 , 2, 3 ,4 ,5 , 6 ,7 , 8 , 9 , 0];
+ 		let sum = number3.reduce(jsTotal);
+ 		document.getElementById("demo4").innerHTML=
+ 		"we have the array number list: "+number3 +"<br>"+
+ 		"and after the total of array we get the result: "+sum ;
+
+ 		function jsTotal(total ,value ,index ,array){
+ 			return total + value ;
+
+ 		}
+ 	</script>
+
+ 	<h3>array.reduceRight() method !</h3>
+ 	<p>this method also give you the sum of numbers from your array !!</p>
+ 	<p id="demo5"></p>
+ 	<script type="text/javascript">
+ 		const number4 = [20, 40 ,60 , 80 ];
+ 		let sum2 = number4.reduceRight(jsReduceRight);
+ 		document.getElementById("demo5").innerHTML = 
+ 		"we have a array number list which is: "+number4 + "<br>"+
+ 		"and after total the numbebr in our array we will get: "+sum2 ;
+
+ 		function jsReduceRight(total ,value ,index ,array){
+ 			return total + value ;
+
+ 		}
+ 	</script>
+
+ 	<h3>array.every() method!</h3>
+ 	<p>this method willl check wheather all number pass the iteration or not !or all array value  pass the test !! </p>
+ 	<p id="demo6"></p>
+ 	<script type="text/javascript">
+ 		const number5 = [10 ,50 ,60 ,19 , 35];
+ 		let Every = number5.every(jsEvery);
+ 		document.getElementById("demo6").innerHTML = 
+ 		"we hvae the vlaue inside our aray is: "+number5 + "<br>"+
+ 		"and after perfoming every method on value which is greater tha 19 we will get: "+Every ;
+
+ 		function jsEvery(value ,index ,array){
+ 			return value >19;
+
+ 		}
+ 	</script>
+
+ 	<h3>Array.some() method !</h3>
+ 	<p>this method check the some value inside our array list as per the condition !</p>
+ 	<p id="demo7"></p>
+ 	<script type="text/javascript">
+ 		const number6 = [15 ,56 ,89 ,22, 45];
+ 		let Some = number6.some(jsSome);
+ 		document.getElementById("demo7").innerHTML=
+ 		"we have the array list whih is: "+number6 + "<br>" +
+ 		"after perfoming some function in my array that value is grater than 25: "+Some ;
+
+ 		function jsSome (value , index , array){
+ 			return  value > 25 ;
+ 		}
+ 	</script>
+ 	<h3>indexOf() method in js!!</h3>
+ 	<p>this method tells us about the poisition of our array value !!</p>
+ 	<p id="demo8"></p>
+ 	<script type="text/javascript">
+ 		const number7 = [20 , 50 , 60 ,80,35, 22];
+ 		let Index  = number7.indexOf(50);
+ 		document.getElementById("demo8").innerHTML =
+ 		"the index of the 50 is: "+Index ;
+ 	</script>
+ 	<h3>lastIndexOf() mehtod in js !</h3>
+ 	<p>the last index tells about us the last index of the vlaue !</p>
+ 	<p id="demo9"></p>
+ 	<script type="text/javascript">
+ 		const number8 = [20 ,50 ,60 ,50, 20 ,50];
+ 		let lastNumber = number8.lastIndexOf(20);
+
+ 		document.getElementById("demo9").innerHTML= 
+ 		"we have a rray list which is: "+number8 + "<br>"+
+ 		"and the last indexo f 20 is: "+lastNumber ;
+ 	</script>
+ 	<h3>array.find() method !</h3>
+ 	<p id="demo10"></p>
+ 	<script type="text/javascript">
+ 		const number9 = [ 10 ,20 ,30 ,40 ,42,44, 60 ,70];
+ 		let Find = number9.find(jsFind);
+ 		document.getElementById("demo10").innerHTML =
+ 		"we have anumber array list which is: "+number9 +"<br>"+
+ 		"and after finding the vlaue greater than 40 we get the answer: "+Find ;
+ 		console.log(number9);
+
+ 		function jsFind(value ,index ,array){
+ 			return value > 40 ;
+
+ 		}
+ 	</script>
+
+ 	<h3>findIndex() method !</h3>
+ 	<p id="demo11"></p>
+ 	<script type="text/javascript">
+ 		const number10 = [20 ,30, 40, 50, 60];
+ 		let findeIndex = number10.findIndex(jsFindIndex);
+ 		
+ 		document.getElementById("demo11").innerHTML=
+ 		"we have the array lsit ehich is: "+number10 +"<br>"+
+ 		"after finding the valur ehich is greaterthan 40 we will get the index of >40 value is: "+findeIndex;
+
+ 		function jsFindIndex(value,index,array){
+ 			return value >40 ;
+
+ 		}
+ 	</script>
+</body>
+</html>

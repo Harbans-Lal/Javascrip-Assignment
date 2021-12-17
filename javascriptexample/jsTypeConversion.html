@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>type conversion in JS !</title>
+</head>
+<body>
+	<h1>Type conversion in JS !!</h1>
+	<p>Display the typeOF all variable type</p>
+	<p id="demo1"></p>
+	<script type="text/javascript">
+		document.getElementById("demo1").innerHTML=
+		typeof "John" +"<br>"+
+		typeof 3.14 + "<br>"+
+		typeof NaN + "<br>"+
+		typeof false + "<br>"+
+		typeof [1 , 2, 3 ] + "<br>"+
+		typeof {name:"john" ,age:50 ,address:"Gujrat"} + "<br>"+
+		typeof new Date() + "<br>"+
+		typeof function () {} + "<br>"+
+		typeof myCar + "<br>"+
+		typeof null ;
+	</script>
+
+	<h3>Display the constructor of all variables !</h3>
+	<p id="demo2"></p>
+	<script type="text/javascript">
+		document.getElementById("demo2").innerHTML =
+		"we have a string 'john' and after calling its constructor we get: "+"john".constructor+"<br>"+
+		(3.14).constructor+ "<br>"+
+		false.constructor + "<br>"+
+		[1,2,3,4].constructor + "<br>"+
+		{name:"john" , age:50 ,address:"India"}.constructor + "<br>"+
+		new Date().constructor + "<br>"+
+		function(){}.constructor ;
+		console.log("john".constructor);
+
+	</script>
+
+	<h3>A string() method can convert a number to the string !</h3>
+	<p id="demo3"></p>
+	<script type="text/javascript">
+		let x = 5 ;
+		document.getElementById("demo3").innerHTML =
+		String(x)+"<br>"+
+		String(123)+"<br>"+
+		String(10.3);
+		document.write(typeof(String(x)));
+	</script>
+<h3>We can also convert the number to a steing by using toSteing() method !</h3>
+</body>
+</html>

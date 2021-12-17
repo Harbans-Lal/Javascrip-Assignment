@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>js statemets !!</title>
+</head>
+<body>
+	<h1>js statement !!</h1>
+	<p>js statement are exucuted by the browser !!</p>
+
+	<p>js programm is sequence of statement !!</p>
+
+	<p id="eg1"></p>
+	<script type="text/javascript">
+		var i = 5 ;
+		var j = 8;
+		var z = i+ j;
+		document.getElementById('eg1').innerHTML="the sum  of 5+8 is(and this multi line statements) : "+z;
+	</script>
+
+
+<h3>we seperate the js statement by semicolon sign ;  like var a;
+var b;
+var c;
+</h3>
+<h3>js accept the multi line statement in a single line !! like var a , b, c;</h3>
+
+<h2>js statements can be run in a group !!</h2>
+<button type="button" onclick="myfun()">Click here to see grouped statemets !!and this is a small eg of grouped statements</button>
+<p id="eg2"></p>
+ <p id="eg3"></p>
+
+<script type="text/javascript">
+	function myfun(){
+		document.getElementById('eg2').innerHTML="hello world!!";
+		document.getElementById('eg3').innerHTML="it is beautifull day !!";
+	}
+</script>
+<h3>the best place to part a statement is after the operator or ,</h3>
+<p id="eg4"></p>
+<script type="text/javascript">
+	document.getElementById('eg4').innerHTML=
+	"this is eg of writting a statements agter opetators";
+</script>
+</body>
+</html>

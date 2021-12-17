@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>js Condition !</title>
+</head>
+<body>
+	<h1>Condition in javascript !</h1>
+	<h3>if ,else if and else condition in js !</h3>
+	<p id="demo1"></p>
+	<script type="text/javascript">
+		var x = 5 ;
+		var y = 5 ;
+        if(x > y){
+        	document.getElementById("demo1").innerHTML ="the greater value is: "+x;
+        	console.log(x);
+        }
+        else if(x < y){
+        	document.getElementById("demo1").innerHTML ="the greater value is::"+y;
+        	console.log(y);
+        }
+        else {
+        	document.getElementById("demo1").innerHTML="both are equal"+y;
+        	console.log("all are equal");
+        }
+	</script>
+	<h3>Switch statement in JS !</h3>
+	<p id="demo2"></p>
+	<script type="text/javascript">
+		var day ;
+		switch(new Date().getDay()){
+			case 0:
+			day ="Sunday"
+			break;
+
+			case 1:
+			day = "Monday";
+			break;
+
+			case 2:
+			day="Tuesday";
+			break;
+
+			case 3:
+			day ="Wednesday";
+			break;
+
+			case 4:
+			day ="Thursday";
+			break;
+
+
+			case 5:
+			day ="Friday";
+			break;
+
+			case 6:
+			day ="Saturday";
+			break;
+		}
+
+		document.getElementById("demo2").innerHTML="the day is: "+day ;
+		console.log(day);
+	</script>
+
+</body>
+</html>

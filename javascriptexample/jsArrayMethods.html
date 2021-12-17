@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array method in JS!</title>
+</head>
+<body>
+	<h1>Array methods in JS !</h1>
+	<h3>Add element by using push method!</h3>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		const arr = ["fist","second","third"];
+		arr.push("forth");
+		document.getElementById('demo').innerHTML =
+		"adding 'forth' in array: "+arr +"<br>"+
+		"removing element in array: "+arr.pop()+"<br>"+
+		"and the array lit is: "+arr;
+	</script>
+
+  <h3>Joing element in an array:</h3>
+  <p id="demo1"></p>
+  <script type="text/javascript">
+  	   const arr1 = ["day","month","year"];
+  	   document.getElementById('demo1').innerHTML="we are joing * in our array and it will look like: "+arr1.join('*');
+  </script>
+  <h3>concat() method to add two array togatehr !</h3>
+  <p id="demo2"></p>
+  <script type="text/javascript">
+  	const arr2 = ["day","night","noon","thunder"];
+  	const arr3 = ["good","bda"];
+  	const arr4 = arr2 + arr3 ;
+  	document.getElementById('demo2').innerHTML=
+  	"the first array is: "+arr2 + "<br>"+
+  	"the second arraya is: +"+arr3 + "<br>"+
+  	"and the the concate of arr1 + arr2 is: "+arr4 ;
+  </script>
+
+
+  <h3>Joining three array in js!</h3>
+  <p id="demo3"></p>
+  <script type="text/javascript">
+  	const one  =["one","two","three"];
+  	const two = ["four","five","second"];
+  	const three = ["seven","eight","nine"];
+
+  	const combine = one.concat(two,three);
+  	document.getElementById('demo3').innerHTML=
+  	"the first array is : "+one + "<br>"+
+  	"the second array is: "+two + "<br>"+
+  	"the third array is: "+three + "<br>"+
+  	"the concat of all array is: "+combine ;
+  	//console.log(combine);
+  </script>
+
+  <h3>Add an array to position 2 using splice() </h3>
+  <p id="demo4"></p>
+  <script type="text/javascript">
+  	const arr5 = ["this","static","ola","uber"];
+  	document.getElementById('demo4').innerHTML = 
+  	"the array is: "+arr5 +"<br>"+
+  	"adding 'world' at position 2: "+arr5.splice(2,0,"world") + arr5;
+
+  </script>
+  <h3>Convert an array to string using toString()</h3>
+  <p id="demo5"></p>
+  <script type="text/javascript">
+  	const world = ["nature","animals","human","air"];
+  	document.getElementById("demo5").innerHTML =world.toString() + "the type of arr is: "+typeof(world);
+  </script>
+
+
+
+  <h3>unshift method in array !</h3>
+  <p id="demo6"></p>
+  <p id="demo7"></p>
+  <button type="button" onclick="jsIsFun()">Unshit lemon to array</button>
+  <script type="text/javascript">
+  	const arr6 = ["water","fire","phones"];
+  	document.getElementById('demo6').innerHTML=arr6;
+
+  	function jsIsFun(){
+      arr6.unshift("lemon");
+      document.getElementById("demo7").innerHTML=arr6 ;
+  	}
+  </script>
+  <h2>shift method to remove element at 1st place in JS!</h2>
+  <p id="demo8"></p>
+  <p id="demo9"></p>
+  <script type="text/javascript">
+  	const arr7 = ["google","facebook","yahoo","instagram","quora"];
+  	document.getElementById("demo8").innerHTML="the arr is :"+arr7 ;
+  	document.getElementById("demo9").innerHTML ="we perfomin shift operation on our array: "+arr7.shift() +"after perfoming shift opearation the array will be: "+arr7;
+  </script>
+  	<h3>Slice method on our aray !</h3>
+  	<p id="arr10"></p>
+  	<script type="text/javascript">
+  		const keyboard  = ["num","shift","caps","enter"];
+  		document.getElementById("arr10").innerHTML=
+  		"we have a aray :"+keyboard + "<br>"+
+  		"if we slice the 1,3 the outpu twill be: "+keyboard.slice(1,3);
+  	</script>
+</body>
+</html>

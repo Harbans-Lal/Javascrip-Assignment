@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS program assignment !</title>
+</head>
+<body>
+<h1>Find the max value between two number !</h1>
+<input id="asg2" type="text" name="firstNumber" placeholder="enter the first number">
+<input id="asg3" type="text" name="secondNumber" placeholder="enter the second  number">
+<button type="button" onclick="findMaxNumber()">click to find max value </button>
+<p id="asg1"></p>
+<script type="text/javascript">
+
+	function findMaxNumber(){
+
+		let firstNumber = document.getElementById("asg2").value;
+	    let secondNumber =document.getElementById("asg3").value ;
+
+
+			if(firstNumber > secondNumber ){
+        document.getElementById("asg1").innerHTML="the Max number is: "+firstNumber ;
+	}
+	else if (secondNumber > firstNumber) {
+		document.getElementById("asg1").innerHTML="the Max is: "+secondNumber ;
+	}
+	else {
+		document.getElementById("asg1").innerHTML = "Both are equal .";
+	}
+	}	
+</script>
+
+<h3>Find the max value between three numbers !</h3>
+<input id="maxValue1" type="text" name="fnum" placeholder="your first number">
+<input id="maxValue2" type="text" name="fnum" placeholder="your second number">
+<input id="maxValue3" type="text" name="fnum" placeholder="your third number">
+<button type="button" onclick="findMaxThreeNum()">Click to find max number !</button>
+<p id="asg4"></p>
+<script type="text/javascript">
+
+        function findMaxThreeNum() {
+
+        	let fnum = document.getElementById("maxValue1").value;
+	        let snum = document.getElementById("maxValue2").value;
+	        let tnum = document.getElementById("maxValue3").value;
+
+
+
+        	if(fnum > snum && fnum > tnum){
+	    	document.getElementById("asg4").innerHTML="the max number is: "+fnum;
+	    }
+	    else if(snum > tnum){
+	    	document.getElementById("asg4").innerHTML="the max number is: "+snum;
+	    }
+	    else{
+	    	document.getElementById("asg4").innerHTML="the max number is: "+tnum;
+	    }
+	    /*else if(fnum == snum && snum == tnum && tnum == fnum){
+	    	document.getElementById("asg4").innerHTML ="All value are equal .";
+	    }
+	    else if(tnum >snum) {
+	    	document.getElementById("asg4").innerHTML ="the max value is: "+tnum;
+	    }
+        else{
+        	document.getElementById("asg4").innerHTML="it is not a valid value.";
+        	
+        }*/
+        }
+</script>
+
+<h1>Cheack wheather a number is negative positive or zero !</h1>
+<input id="asg7" type="text" name="ChkNum" placeholder="Enter your number">
+<button id="asg6" onclick="checkNum()">Click here to know what kind of number is this !</button>
+<p id="asg5"></p>
+
+<script type="text/javascript">
+	function checkNum(){
+		let numCheck  = document.getElementById("asg7").value;
+
+		if(numCheck < 0){
+			document.getElementById("asg5").innerHTML="the number is negative value: "+numCheck;
+		}
+		else if(numCheck == 0 ){
+			document.getElementById("asg5").innerHTML="the number is zero !";
+		}
+		else{
+			document.getElementById("asg5").innerHTML="the value is positive: "+numCheck;
+		}
+	}
+	
+</script>
+
+<h1>Cheack a number is divisible to 5 ,11 or not !</h1>
+<input id="asg8" type="text" name="" placeholder="enter your number to know that it is divisible to 5,11 or nt">
+<button type="button" onclick="divisibleByOrNot()">Clik here to see the result!</button>
+<p id="asg9"></p>
+
+
+<script type="text/javascript">
+	function divisibleByOrNot(){
+		let thrNumber = document.getElementById("asg8").value;
+		if(thrNumber % 5==0 && thrNumber % 11 ==0){
+			document.getElementById("asg9").innerHTML="This number can be divided by 5 and 11: "+thrNumber;
+		}
+		else{
+			document.getElementById("asg9").innerHTML="number is not divisible by 5 and 11.";
+		}
+	}
+</script>
+<h1>Cheack a year is leap year or not !</h1>
+<input id="asg10" type="tex" name="leap" placeholder=""enter the year here :>
+<button type="button" onclick="leapYear()">Cheack is it leap or not!</button>
+<p id="asg11"></p>
+
+<script type="text/javascript">
+	function leapYear(){
+		let leapYear = document.getElementById("asg10").value;
+
+		if(leapYear % 4 ==0){
+			document.getElementById("asg11").innerHTML="the year is leapYear: "+leapYear; 
+		}
+		else {
+			document.getElementById("asg11").innerHTML="oops !This is not a leap year."
+		}
+	}
+</script>
+<h1>Write a  program to count total number of notes in given amount.120</h1>
+<h3>We have Amount of 120 and to find the note value enter your note value below input section: </h3>
+<h4>Input section:</h4><input id="asg12" type="text" name="" placeholder="enter the note value">
+<button type="button" onclick="findNote()">Find the total note in 120 !</button>
+<p id="asg13"></p>
+
+<script type="text/javascript">
+	function findNote(){
+		let ammount = 120 ;
+        let note = document.getElementById("asg12").value;
+        let totalNote = ammount / note;
+
+       for(note = 1; note<=200;note++){
+       	document.getElementById("asg13").innerHTML="<h4>The total note is:</h4> "+totalNote;
+       }
+	}
+</script>
+
+<h1>Write a  program to input angles of a triangle and check whether triangle is valid or not.</h1>
+<input id="fAng" type="text" name="inputOne" placeholder="enter the first angle value">
+<input id="sAng" type="text" name="inputTwo" placeholder="enter the second angle value">
+<input id="tAng" type="text" name="inputThree" placeholder="enter the third angle value">
+
+<button type="button" onclick="triangleCheck()">Cheak a Triangle is vlaid or not !</button>
+<p id="asg15"></p>
+
+<script type="text/javascript">
+	function triangleCheck(){
+		let fAngle = document.getElementById("fAng").value;
+	
+		let sAngle = document.getElementById("sAng").value;
+	
+		let tAngle = document.getElementById("tAng").value;
+		let validTriAng = parseInt(fAngle) + parseInt(sAngle) +parseInt(tAngle);
+
+		var triangle = validTriAng ;
+		//document.getElementById("asg15").innerHTML="the sum is:"+triangle;
+		//console.log(triangle);
+		/*if(triangle < 180){
+			document.getElementById("asg15").innerHTML="the sum is les than 180 so it is not a valid triangle. because te sum is: "+triangle ;
+		}*/
+		 if(triangle == 180){
+			document.getElementById("asg15").innerHTML="This is a valid angle because the sum is: "+triangle;
+		}
+		else{
+			document.getElementById("asg15").innerHTML="This is not a triangle";
+		}
+		/*else if(triangle > 180) {
+			document.getElementById("asg15").innerHTML="ths is also not a valid angle because the sum is: "+triangle;
+		}
+		else {
+			document.getElementById("asg15").innerHTML="welcome to visit here!";
+		}*/
+	}
+</script>
+
+<h1>Write a  program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade according to following:</h1>
+
+
+
+<input id="sub1" type="text" name="Physics" placeholder="enter the marks of Physics below 100">
+<input id="sub2" type="text" name="Chemistry" placeholder="enter the marks of Chemistry below 100">
+<input id="sub3" type="text" name="Biology" placeholder="enter the marks of Biology below 100">
+<input id="sub4" type="text" name="Mathematics" placeholder="enter the marks of Mathematics below 100">
+<input id="sub5" type="text" name="Computer" placeholder="enter the marks of Computer below 100">
+
+<button type="button" onclick="findGrade()">Check the grade as per subject marks !</button>
+<p id="asg16"></p>
+
+<script type="text/javascript">
+	function findGrade(){
+		let Physics =document.getElementById("sub1").value;
+		let Chemistry =document.getElementById("sub2").value;
+		let Biology=document.getElementById("sub3").value;
+		let Mathematics=document.getElementById("sub4").value;
+		let Computer =document.getElementById("sub5").value;
+
+		let totalMarks =parseInt(Physics)  + parseInt(Chemistry) + parseInt(Biology)+ parseInt(Mathematics)+ parseInt(Computer);
+
+		let total = totalMarks ;
+
+		let percentage = total / 5 ;
+
+		document.getElementById("asg16").innerHTML="the total percentage is: "+percentage + "%";
+		console.log(percentage);
+
+		if(percentage >= 80){
+			document.getElementById("asg16").innerHTML="Grade A and the percentage is: "+percentage+"%";
+
+		}
+		else if(percentage >=70){
+			document.getElementById("asg16").innerHTML="He got B grade and percentage is: "+percentage+"%";
+		}
+		else if(percentage >=60 ){
+			document.getElementById("asg16").innerHTML="He got the C grade and percentage is: "+percentage+"%";
+		}
+		else if (percentage >=40) {
+			document.getElementById("asg16").innerHTML="He got D Grade and percentage is: "+percentage+"%";
+		}
+		else if(percentage <=40){
+			document.getElementById("asg16").innerHTML="He got thr E grade and percentage is: "+percentage+"%";
+		}
+		else{
+			document.getElementById("asg16").innerHTML="oops yout are fail this time try next time and percentage is: "+percentage+"%";
+		}
+
+
+	}
+</script>
+
+<h1>Write a  program to input electricity unit charges and calculate total electricity bill according to the given condition:</h1>
+<p>For first 50 units Rs. 0.50/unit
+For next 100 units Rs. 0.75/unit
+For next 100 units Rs. 1.20/unit
+For unit above 250 Rs. 1.50/unit
+An additional surcharge of 20% is added to the bill</p>
+<input id="elec" type="text" name="unit" placeholder="enter Your UNIT here and know the result: ">
+<button type="button" onclick="billIs()" >Check total bill here! </button>
+
+<p id="asg17"></p>
+
+<script type="text/javascript">
+	function billIs(){
+		let unit1 = 0.50;
+		parseInt(unit);
+	    let unit2 = 0.75;
+	    parseInt(unit2);
+	    let unit3 = 1.20;
+	    parseInt(unit3)
+	    let unit4 = 1.50;
+	    parseInt(unit4);
+
+	var unit = document.getElementById("elec").value;
+	var intUnit=parseInt(unit);
+
+	var Charge = intUnit * unit1;
+	console.log(Charge);
+
+	var additonCharge = Charge * 20/100;
+	//console.log(additonCharge);
+	var totalcharge = Charge + additonCharge;
+     
+		if(unit <= 50 ){
+			document.getElementById("asg17").innerHTML=
+			"your unit is: "+intUnit+"<br>"+
+			"Your Bill ammount is: "+Charge +"<br>"+
+			"After adding 20% extra your payable ammount is:  "+ totalcharge +"Rs.";
+		}
+		else if(unit <=150){
+			document.getElementById("asg17").innerHTML=
+			"your unit is: "+intUnit+"<br>"+
+			"Your Bill ammount is: "+Charge +"<br>"+
+			"After adding 20% extra your payable ammount is:  "+ totalcharge +"Rs.";
+		}
+		else if(unit <=250){
+            document.getElementById("asg17").innerHTML=
+            "your unit is: "+intUnit+"<br>"+
+            "Your Bill ammount is: "+Charge +"<br>"+
+            "After adding 20% extra your payable ammount is:  "+ totalcharge +"Rs.";
+		}
+		else if(unit >250 && unit <= 1000){
+			document.getElementById("asg17").innerHTML=
+			"your unit is: "+intUnit+"<br>"+
+			"Your Bill ammount is: "+Charge +"<br>"+
+			"After adding 20% extra your payable ammount is:  "+ totalcharge +"Rs.";
+		}
+		else {
+			document.getElementById("asg17").innerHTML=
+			"your unit is: "+intUnit+"<br>"+
+			"Your Bill ammount is: "+Charge +"<br>"+
+			"Your bill is so high we are sending the CBI to your house soon !!";
+		}
+	
+	}
+	
+</script>
+
+<h1>Write a  program to input week number and print week day.</h1>
+<input id="asg18" type="text" name="week">
+<button type="button" onclick="checkWeekDay()">Check the week number and day !</button>
+<p id="date"></p>
+<!-- 
+<script type="text/javascript">
+	function checkWeekDay(){
+		let weekNumber = new Date().getMonths();
+		let weekDay =new Date().getDays();
+		document.getElementById("asg18").innerHTML=weekDay;
+	}
+</script> -->
+
+
+
+
+
+</body>
+</html>

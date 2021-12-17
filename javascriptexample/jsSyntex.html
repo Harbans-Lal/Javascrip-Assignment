@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Js syntex !</title>
+</head>
+<body>
+	<h1>here is the examole of  JS syntex !</h1>
+
+	<h3>js statements !!</h3>
+	<p id="eg1"></p>
+	<script type="text/javascript">
+		var a ,b ,z ;//here we first decalte the variable in js
+		a =5;  //assign the value to a 
+		b = 9 ; //assign the value to b
+		z = a + b ; //assign the a and b sum to z 
+		document.getElementById('eg1').innerHTML="THE sum of a and b is  z :"+z;
+	</script>
+
+	<h3>Js number !</h3>
+    <p>in js all natural as well float value and everything is number for eg  9  and 9.14 in both eg both are the number</p>
+    <p id="eg2"> </p>
+    <p id="eg3"> </p>
+     <p id="eg4"> </p>
+      <p id="eg5"> </p>
+
+    <script type="text/javascript">
+    	var numbera , numberb;
+    	numbera = 5 ;
+    	numberb = 10.5 ;
+    	document.getElementById('eg2').innerHTML="the value of numbera is : "+ numbera ;
+    	document.getElementById('eg3').innerHTML="the val of numberb is : "+ numberb ;
+    	document.getElementById('eg4').innerHTML="the type of numbera is : " +typeof(numbera);
+     	document.getElementById('eg5').innerHTML="the type of numberb is : " +typeof(numberb);
+   	
+    </script>
+
+    <h2>JS string !</h2>
+
+    <p>stiing is a sequence of charcters !! in js every value has single quote ('') or double quote("") has consider as string !!</p>
+
+    <p id="eg6"></p>
+    <p id="eg7"></p>
+
+    <script type="text/javascript">
+    	var name  ="hello world";
+    	document.getElementById('eg6').innerHTML="thne value of name is : "+name;
+    	document.getElementById('eg7').innerHTML="the type of a name is  : "+typeof(name);
+    </script>
+
+    <h2>Js variable !!</h2>
+    <p>the js variable are which store the value of a datatype or a value !!</p>
+
+    <p id="eg8"></p>
+
+    <script type="text/javascript">
+    	var test = "okay";//here we can say test is a variable which store the value okay
+    	document.getElementById('eg8').innerHTML="here we store the value of okay inside the test and displayoing the value via test variable : " +test;
+    </script>
+
+
+    <h1>js operators</h1>
+
+    <p>js operators use arithmetic operators to compute the value(like in algebra)!!</p>
+    <p>the ans of (5*5)+10 is :</p>
+    <p id="eg9"></p>
+     
+    <script type="text/javascript">
+    	document.getElementById("eg9").innerHTML=(5*5)+10;
+    </script>
+
+    <h2>assignment</h2>
+    <p>you can  simply assign the value to any variable by using assignmet operator i.e = is equal operator for eg var a = 9; // here we assing the 9 to a  </p>
+    <p id="eg10"></p>
+   <script type="text/javascript">
+   	var a = 9;
+   	document.getElementById('eg10').innerHTML="the value of a is : "+a;
+   </script>
+
+   <h3>Expression compute value in integer and string !!</h3>
+   <p>in int value we get the ans in mathematical form for eg. 10 +20 will output as 30 
+   but in string if we add two string it will concatinate them togather.
+  </p>
+  <p id="eg12"></p>
+  <p id="eg13"></p>
+  <script type="text/javascript">
+  	var fint = 5 ;
+  	var sint = 9 ;
+  	var sum = fint + sint ;
+  	var fstr ="5";
+  	var sstr =6;
+  	var sumstr =fstr + sstr;
+  	document.getElementById('eg12').innerHTML="the ouput of 5 + 9 is : "+sum;
+  	document.getElementById('eg13').innerHTML="the value of '5' + 6 is : "+sumstr;
+  </script>
+
+  <h2>Keyword</h2>
+  <p>keyword are pre resereved word in any programming language , suppose if we wanrt to declare any variable in js so we have keyword var or let or const thesr are just few eg of keyword !!</p>
+  <p id="eg14"></p>
+
+  <script type="text/javascript">
+
+  	var oka ="okay hello world !!"
+  	document.getElementById('eg14').innerHTML="we use var to declare the variable and now we printing the variabel out  : " +oka;
+  </script>
+
+  <h2>js comments !!</h2>
+  <p>we can comment out in js via // sign for singe line commment ifwe want multi line commnt  then we have to use /*   */ this sign and insdidr this sign we have multiline comment !!</p>
+
+
+<h2>js is alod case snstive language !!</h2>
+<p>if we write firstname and firstName then js considrer these both word diffrent !!</p>
+</body>
+</html>

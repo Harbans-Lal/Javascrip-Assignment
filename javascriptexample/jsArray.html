@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array in JS !</title>
+</head>
+<body>
+	<h1>Array in JS !!!</h1>
+	<h3>Create array in JS !!</h3>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		const cars = ["volvo","audi","nano"];
+		document.getElementById('demo').innerHTML="the array is: "+cars ;
+	</script>
+	<h4>We can also crate array in multi line !</h4>
+	<p id="demo1"> </p>
+	<script type="text/javascript">
+		const place =[
+		"first",
+		"second",
+		"third"
+		];
+		document.getElementById('demo1').innerHTML="the value of place is: "+place;
+	</script>
+	<h3>accesing the array eelement by indesx value !</h3>
+	<p id="demo2"></p>
+	<script type="text/javascript">
+		const glass = ["mon","tue","thu"];
+		document.getElementById("demo2").innerHTML="we have a array glass = [ 'mon','tues','thur']and we we accesing the value of thu is: ;"+glass[2];
+	</script>
+	<h3>Access the full array !</h3>
+	<p id="demo3"></p>
+	<script type="text/javascript">
+		const year = ["2021","2022","2023","25456"];
+		document.getElementById("demo3").innerHTML="we have array yrear and in this array we have value: "+year;
+	</script>
+	<h3>find the length of a array !</h3>
+	<p id="demo4"></p>
+	<script type="text/javascript">
+		const alpha =["a","b","c","d"];
+		document.getElementById("demo4").innerHTML="the length of alpha =['a','b','c','d'] is: "+alpha.length;
+	</script>
+
+
+
+
+
+
+	<h3>Loop through an array :</h3>
+    <p id="demo6"></p>
+    <script type="text/javascript">
+    	const fruits = ["mango","apple","oranges","papaya"];
+    	let texter ="<ul>";
+    	for(let i = 0;i<fruits.length;i++){
+    		texter += "<li>"+ fruits[i] + "</li>";
+    	}
+    	texter  += "<ul>";
+    	document.getElementById('demo6').innerHTML = texter ;
+    	console.log(texter);
+    </script>
+
+<h3> Add the element in array !</h3>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<script type="text/javascript">
+	const month = ["dec","nov","oct","sep"];
+	document.getElementById('demo7').innerHTML ="thhis is a array list we have: "+ month;
+	function jsfun1(){
+		month[month.length] = ['aug'];
+		document.getElementById("demo8").innerHTML="here we add the 'aug' element at the end: "+month;
+	}
+	jsfun1();
+</script>
+<h3>add undefiend hole to  a array!</h3>
+<p id="demo9"></p>
+<script type="text/javascript">
+	const phone = ["apple","ball","cat","dog"];
+	phone[6] = "joker";
+
+	let pLen = phone.length ;
+	let xml = "";
+	for(let i = 0; i<pLen ; i++){
+		xml += phone[i] + "<br>";
+	}
+document.getElementById("demo9").innerHTML =xml ;
+</script>
+<h3>instanceof and isArray method to recongnze a array !</h3>
+<p id="demo10"></p>
+<script type="text/javascript">
+	var mouse = ["laser","optical"];
+	document.getElementById("demo10").innerHTML=
+	"we have a array: "+mouse + "<br>"+
+	"recongnize a array by isArray method: "+Array.isArray(mouse)+"<br>";
+	//"recongnize a array by instanceof method: "+mouse instanceof Array;
+</script>
+</body>
+</html>

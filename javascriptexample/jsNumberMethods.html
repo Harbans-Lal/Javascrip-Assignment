@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS number method !</title>
+</head>
+<body>
+	<h1>JS numbers method !</h1>
+	<h3>toStrint() method can convert a number to the base 2 to 36 !</h3>
+	<p id="demo"></p>
+    <script type="text/javascript">
+    	let num = 32 ;
+    	document.getElementById('demo').innerHTML=
+    	"32 ="+"<br>" +
+    	"decimal ="+num.toString(10) +"<br>"+
+    	"octal ="+num.toString(8) +"<br>"+
+    	"hexadecimal ="+num.toString(16) + "<br>"+
+    	"binary ="+num.toString(2) + "<br>";
+    </script>
+
+    <h3>valueof() method return a number as a number !</h3>
+    <p id="demo1"></p>
+    <script type="text/javascript">
+    	let num1 = 456 ;
+    	document.getElementById('demo1').innerHTML=
+    	"the vaueOF of num1 is where num1 = 456: "+num1.valueOf()+"<br>"+
+    	"the value of (450+6 is): "+(450+6).valueOf()+"<br>"+
+    	"the value of (456 is): "+(456).valueOf();
+    </script>
+    <h3>toExponential() method return a numner with exponential value !!</h3>
+    <p id="demo3"></p>
+    <script type="text/javascript">
+      let num2 = 456 ;
+      document.getElementById('demo3').innerHTML=
+      "the value is: "+num2 + "<br>"+
+      "this is the reult of toExponential() : "+num2.toExponential() + "<br>"+
+      "this is the result of toExponential(4) : "+num2.toExponential(4)+ "<br>"+
+      "this is the result of toExponential(6): "+num2.toExponential(6);
+    </script>
+    <h3>tofixed() method round a number to to a number of digits !</h3>
+    <p id="demo4"></p>
+    <script type="text/javascript">
+      let number5 = 10.51 ;
+      document.getElementById('demo4').innerHTML=
+      "the number5 is :"+number5 + "<br>"+
+      "the tofixed() of number5 is : "+number5.toFixed()+"<br>"+
+      "the tofixed(2) od number5 is: "+number5.toFixed(2)+"<br>"+
+      "the tofixed(4) of number5 is : "+number5.toFixed(4)+"<br>"+
+      "and the tofixed(6) of number5 is: "+number5.toFixed(6)+"<br>"+
+      "and so on........";
+    </script>
+    <h3>the toPricision() method return a number with specified length ! </h3>
+    <p id="demo6"></p>
+    <script type="text/javascript">
+    	let number6 = 9.97 ;
+    	document.getElementById('demo6').innerHTML=
+    	"the number is: "+number6.toPrecision()+"<br>"+
+    	"the number with toPrecision(2 is: ): "+number6.toPrecision(2)+"<br>"+
+    	"the toPrecision(6) is: "+number6.toPrecision(6);
+    </script>
+    <h3>the number() method convert a variable to number !</h3>
+    <p id="demo7"></p>
+    <script type="text/javascript">
+    	document.getElementById('demo7').innerHTML=
+    	"the vlaue of a Number(true) is: "+Number(true)+"<br>"+
+    	"the value of a Number(false) is: "+Number(false)+"<br>"+
+    	"the value of a number(  10) is: "+Number(  10)+"<br>"+
+    	"the value of number(10) is: "+Number(10)+"<br>"+
+    	"the value of number ( 10 )is: "+Number( 10 )+"<br>"+
+    	"the value of number('10.33')is: "+Number(10.33)+"<br>"+
+    	"the value of number('10 33')is: "+Number("10 33")+"<br>"+
+    	"the value of number('10 , 45')is: "+Number("10 , 45")+"<br>"+
+    	"the value of number('john')is: "+Number("john");
+    </script>
+    <h4>Number() method can even convert a date to a number !</h4>
+    <h3>the parseInt() mthhod convert a string to number !</h3>
+    <p id="demo8"></p>
+    <script type="text/javascript">
+    	document.getElementById('demo8').innerHTML=
+    	"the result of ParseInt('-10')is: "+parseInt("-10")+"<br>"+
+    	"the result of ParseInt('-10.33')is: "+parseInt("-10.33")+"<br>"+
+    	"the result  of ParseInt('10')is: "+parseInt("10")+"<br>"+
+    	"the parseInt of ('10.33')is: "+parseInt("10.33")+"<br>"+
+    	"the parseInt('10 6')is: "+parseInt("10 6")+"<br>"+
+    	"the parseInt('10 year')is: "+parseInt("10 year")+"<br>"+
+    	"the parseInt('year 10')is: "+parseInt("year 10");
+    </script>
+    <h3>ParseFloat() method also convert a string to a number !</h3>
+    <h3>MAX_VALUE return the largest possible number in js!</h3>
+    <p id="demo9"></p>
+    <p>similarlly we can alos find the min value by using MIN_VALUE in js and 5e-324 this is the min value in js !!!!</p>
+    <script type="text/javascript">
+    	let digit = Number.MAX_VALUE ;
+    	document.getElementById("demo9").innerHTML="the max value in js is:"+digit ;
+    </script>
+    <h4>positive infinity return positive infinty and negative infinty represent negative infintt!!</h4>
+    
+</body>
+</html>

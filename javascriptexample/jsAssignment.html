@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Assignment operators in JS</title>
+
+</head>
+<body>
+	<h1>Assignment in JS !</h1>
+	<h3>= sign to assign a vaue in variable</h3>
+	<p id="eg1"></p>
+	<script type="text/javascript">
+		var i = 10;//we assign the value 10 to i
+		document.getElementById('eg1').innerHTML="the value of i is: "+10;
+
+	</script>
+
+	<h3>+= sign to assign a variable</h3>
+	<p id="eg2"></p>
+	<script type="text/javascript">
+		var num = 10;
+		 num +=num;
+		document.getElementById('eg2').innerHTML="the value of num is (num =10 so the num +=num is) : "+num;
+	</script>
+	<h3>-= sign to assign a value</h3>
+	<p id="eg3"></p>
+	<script type="text/javascript">
+		var num1 =20;
+		var num2 = 30;
+		num2 -=num1;
+		document.getElementById('eg3').innerHTML="the value of num2 is (we have num1 =20 and num2 =30 so num2 -=num1 is) : "+num2;
+	</script>
+
+	<h3>*= sign to assign a vlaue</h3>
+	<p id="eg4"></p>
+	<script type="text/javascript">
+		var numN = 5;
+		var numM = 6;
+		numM *= numN ;
+		document.getElementById('eg4').innerHTML="the output of numM is(we have numN =5 and numM =6 so numM *=numN is): "+numM;
+	</script>
+
+	<h3>/= sign to assign a value to variable</h3>
+	<p id="eg5"></p>
+	<script type="text/javascript">
+		var numH = 8 ;
+		var numJ =2 ;
+		numH /=numJ;
+		document.getElementById('eg5').innerHTML="the output of numH is (numH =8  and numJ =2 so numH /=numJ is) : "+numH;
+		
+	</script>
+	<h3>%= sign to assign the value !!</h3>
+	<p id="eg6"></p>
+	<script type="text/javascript">
+		var name = 11 ;
+		var name2 = 5;
+		name %=name2 ;
+		document.getElementById('eg6').innerHTML="the output of name is (name = 11 ,name2 =5 so name %= name2 is): "+name ;
+	</script>
+
+</body>
+</html>

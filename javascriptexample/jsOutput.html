@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Js output !</title>
+</head>
+<body>
+	<h1>How can we output the file in js?</h1>
+
+	<p>we have first method to output the file is document.write();</p>
+	<script type="text/javascript">
+		var first = 5;
+		var second = 6 ;
+		var sum = first + second;
+		document.write("this is how document.write work " +sum);
+	</script>
+
+
+	<h4>WE can also use document.getElementById to print the value of our html content !</h4>
+
+	<p id="eg1"></p>
+	<script type="text/javascript">
+		document.getElementById('eg1').innerHTML="this is printed by the document.getElementById in js";
+	</script>
+
+
+	<h3>we can also alert our output the sceen to show the result! here is the eg..</h3>
+	<script type="text/javascript">
+		alert("hello worl !");
+	</script>
+
+	<h3>And last method to print out somthing on browser is console.log ! </h3>
+	<p>this will not appear in the inner html document it will only apppear in the console log of our browser sectrion!!!!</p>
+
+	<script type="text/javascript">
+		console.log("hello world " +5+6);
+	</script>
+
+
+</body>
+</html>

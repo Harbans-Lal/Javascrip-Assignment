@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>String in JS</title>
+</head>
+<body>
+	<h1>JS string</h1>
+	<p>in javascript every thinng is written inside the single or doublw quote is string eg 'ram' and "ram " here both ram are string !!</p>
+<h4>Backslasj before quote accept quote as a quote !!</h4>
+<p id="demo1"></p>
+<script type="text/javascript">
+	var strOne ="it\'s is good day!";
+	document.getElementById('demo1').innerHTML=strOne;
+</script>
+
+<h3>Find th elength of a string</h3>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script type="text/javascript">
+	var strTwo ="this is a string and i dont know the length of this string !";
+	document.getElementById('demo2').innerHTML="the string is: "+strTwo;
+	document.getElementById('demo3').innerHTML="and the length of this string is: "+strTwo.length;
+</script>
+
+<h3>You cna break the string by \ sign!!</h3>
+<p id="demo4"></p>
+<script type="text/javascript">
+	var strThree ="hello \
+	world";
+	document.getElementById('demo4').innerHTML="and this streing is in written two line: "+strThree;
+</script>
+<h3>But you can not break the code with \ sign</h3>
+<p id="demo5"></p>
+<script type="text/javascript">
+	var strFour = \
+	"this is a string !";
+	document.getElementById('demo5').innerHTML=strFour;
+	console.log(strFour);
+</script>
+
+<h3>find the first occurence of the char in a string indexof()</h3>
+<p id="demo6"></p>
+<script type="text/javascript">
+	var strFive ="this is some script and i dont know where it is located";
+	document.getElementById("demo6").innerHTML="the first char of located word in this list is index of: " +strFive.indexOf('located');
+</script>
+
+<h3>Search the word in a string and find it with -match()</h3>
+<p>soppose we have a str: this is a strn and this is simple strn   &nbsp and we are amtching trn them o/p will be:-</p>
+<p id="demo7"></p>
+<script type="text/javascript">
+	var strSix ="this is a strn and this is simple strn";
+	document.getElementById('demo7').innerHTML=strSix.match(/trn/g);
+</script>
+<h3>We can replce the strn by using replace() method !!</h3>
+<p id="demo8"></p>
+<script type="text/javascript">
+	var strSeven = "this is also some othe str example";
+	document.getElementById('demo8').innerHTML="here we are replaceing also to the: " +strSeven.replace("also","the");
+</script>
+<h3>we can make our str uppercase and lowecase using toUppercase and toLowercase</h3>
+<p id="demo9"></p>
+<p id="demo10"></p>
+<script type="text/javascript">
+   var strEight ="this is strn in small case";
+   document.getElementById('demo9').innerHTML=strEight;
+   document.getElementById('demo10').innerHTML=strEight.toUpperCase();
+</script>
+<h3>we can also split the string by split() method</h3>
+<p id="demo11"></p>
+<script type="text/javascript">
+	var strNine = "a,b,c,d,e";
+	const arr =strNine.split(",");
+	document.getElementById('demo11').innerHTML=arr;
+
+</script>
+
+</body>
+</html>

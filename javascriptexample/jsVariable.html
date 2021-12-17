@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>variable in js !!</title>
+</head>
+<body>
+	<h1>js variable !!</h1>
+	<p>variable are like container it store the some value inside it so variables are a container which store the value itself like var x = 9; here x is a variable which is storing the value 9 itself!!</p>
+
+	<h3>js variable as algebra</h3>
+     <p id="eg1"></p>
+	<script type="text/javascript">
+		var a = 5;
+		var c = 8;
+		var sum = a+ c;
+		document.getElementById('eg1').innerHTML="then sum of a and c is stored in sum variabel and we are printing out the sum here a =5  and c = 8  and sum = a+ c and the sum is : "+sum;
+	</script>
+	<h4>A variable without the value return the undefiend on display eg if we have var a1;
+	and we print the value of a it will print us undefiend !!</h4>
+	<p id="eg2"></p>
+	<script type="text/javascript">
+		var a1;
+		document.getElementById('eg2').innerHTML="the value of a is :"+a1;
+	</script>
+	<h4>if you redeclare the js value it will not lose the value eg if we have var number= 5; and we re decare it like var number; and we print  the number it will still return the value 5 as output;</h4>
+	<p id="eg3"></p>
+	<script type="text/javascript">
+		var number = 5;
+		var number;
+		document.getElementById('eg3').innerHTML="the value of number is :"+number;
+	</script>
+
+	<h3>Adding string with a number !!</h3>
+	<p>if we add a number to a number we get the mathematical answer of that number but if we add a number to a string it will concate the vlaue eg if we have 5 and "6" so the 5+"6"=56 because 6 is string but if we have 5+6+"6"=116 because first two numbers are int and int will always give us mathmatial answer .</p>
+
+</body>
+</html>

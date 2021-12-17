@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Numbers in JS</title>
+</head>
+<body>
+	<h1>JS numbers !!</h1>
+
+	<h3>in js we can write our numbers with or without decimal value !</h3>
+
+	<h3>In java script if we have long number we can write it in exponet eg if we have 12300000 so this number can br written as 123e5 in js and similar if we have 0.00123 so we can write it as 123e-5</h3>
+
+	<h3>In js till 15 digit numbers can give the accurate asn after that ans may not accurate eg 999999999999999 this will result accurate value</h3>
+	<h4>floating point arithmetic is not acuurate alwats e.g 1.2 +0.4 may give you unexpected result !</h4>
+	<h3>But floating numbers help to divide by 10</h3>
+	<p>the result of (0.1 + 0.4 *10)/10 is :</p>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		var first = 0.1 ;
+		var second = 0.4 ;
+		document.getElementById('demo').innerHTML=(first + second *10)/10 ;
+	</script>
+	<h4>Adding two numbers and add them in a variable</h4>
+	<p>if we have var num1 = 5; and num2 = 8; and we have var sum = num1 + num2; so the rsult of sum is: </p>
+	<p id="demo1"></p>
+	<script type="text/javascript">
+		var num1 = 5 ;
+		var num2 = 8 ;
+		var sum = num1 + num2 ;
+		document.getElementById('demo1').innerHTML="the result of sum is: "+sum;
+	</script>
+
+	<h4>Adding a numeric value with a string alwatys return string !</h4>
+	<p>if we have a numeric value and we add it with the string it will always gives us a string result for eg if we have var some1 = 5 ; and we have var some2 = "6" and we add them it will result us 56 isntead of 11.</p>
+	<p id="demo2"></p>
+	<script type="text/javascript">
+		var some1 = 5;
+		var some2 = "6";
+		document.getElementById('demo2').innerHTML="the addition of 5 and string 6 is :"+some1+some2 ;
+	</script>
+	<p>if we perfome any other operation on string except from addition then string will act as a numeric vlue for eg. if we do "6"/3 then in this case we will get the accurate value 3.</p>
+
+	<h2>JS will not convert a string to numeric value while we performing adding operation on it!</h2>
+
+	<h3>A number is divided by a string return NaN value for eg if we divide 10 / "apple"  it will return us NaN value !</h3>
+	<p id="demo3"></p>
+	<p>NaN is not a number but when we type of NaN it will return us number !</p>
+	<p id="demo4"></p>
+	<script type="text/javascript">
+		var x = 5 / "india";
+		document.getElementById('demo3').innerHTML=isNaN(x);
+		document.getElementById('demo4').innerHTML="but the type of NaN is: "+typeof(NaN);
+	</script>
+
+	<h3>Using NaN as mathematical operation always return a NaN value !</h3>
+
+	<h4>Infinity is return if you calculate the number out of the largest number!</h4>
+	<p>eg of infinty is square of 2 it will goes infinity like 2 ,4,16,256......infinity.</p>
+
+	<p id="demo5"></p>
+	<p id="demo6"></p>
+	<script type="text/javascript">
+		let number1 = 2;
+		let store = "";
+		while (number1 !=Infinity) {
+			number1 = number1 * number1 ;
+			store += number1 + "<br>";
+		}
+		document.getElementById('demo5').innerHTML=store ;
+		document.getElementById('demo6').innerHTML="the type of Infinity is :"+typeof(Infinity);
+	</script>
+	<h3>Divided by zero alos produce infinity !</h3>
+	<h4>Infinity is alos a number the type of infinity id number</h4>
+	
+
+
+
+</script>
+</body>
+</html>

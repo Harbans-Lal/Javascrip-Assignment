@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Array in Javascript</title>
+</head>
+<body>
+	<h3>Array in JS</h3>
+      <h6>this is example of array in js how array list look like</h6> 
+    <p id="array"></p>
+    <p id="array1"></p>
+    <p id="array3"></p>
+	<script type="text/javascript">
+		const fruits = ["apple","laptop","pen","mouse"];
+
+		document.getElementById("array").innerHTML=fruits ;
+		document.getElementById("array1").innerHTML=fruits[0];
+		fruits[0] ="wartiz";
+		document.getElementById("array3").innerHTML=fruits;
+
+	</script>
+
+
+	<h5>Array objects</h5>
+    <p id="array4"></p>
+	<script type="text/javascript">
+		const person= {firstName:"john",lastName:"doe",age:52};
+		document.getElementById("array4").innerHTML=person.age;
+	</script>
+	<h5>Proprty and methods in js</h5>
+	<p id="array6"></p>
+     <p id="array5"></p>
+     <p id="array7"></p>
+     <p id="array8"></p>
+     <p id="array9"></p>
+     <p id="array10"></p>
+	<script type="text/javascript">
+		const apps =["amazon","insta","mouse","mobie","desktop"];
+		document.getElementById("array6").innerHTML ="this is our default array : :" +apps;
+		document.getElementById("array5").innerHTML="this is the length of our array : : " +apps.length;
+		document.getElementById("array7").innerHTML="This is our sorted array : : " +apps.sort();
+		document.getElementById("array8").innerHTML="accessing array from the list by using apps[0] : : " +apps[0];
+		apps[0]="changing";
+		//document.getElementById("array9").innerHTML="change the value of a array : : "+apps[0]="changed";
+		document.getElementById("array10").innerHTML="after changing the array list : : "+apps;
+	</script>
+
+	<h5>Loooping array list in javascript using for loop</h5>
+    <p id="array11"></p>
+	<script type="text/javascript">
+		const color =["black","white","blue","green","red","yellow"];
+
+		let len =color.length;
+		let text ="<ul>" ;
+
+		for (var i = 0; i <len; i++) {
+			text = text + "<li>" +color[i] +"</li>";
+		}
+		text += "</ul>";
+		document.getElementById("array11").innerHTML=text;
+	</script>
+
+	<h3>Storing the data of a array in a list in html</h3>
+
+    <p id="array12"></p>
+	<script type="text/javascript">
+
+		const social = ["quora","number","hello","world"];
+
+		let store = "<ul>";
+		for (var j=0; j<social.length ;j++) {
+			store = store +"<li>"+social[j] + "</li>";
+		}
+		store += "</ul>";
+		document.getElementById("array12").innerHTML=store;
+	</script>
+
+
+  <h4>Sorting array in js</h4>
+  <p id="array15"></p>
+  <p id="array13"></p>
+  <p id="array14"></p>
+
+  <script type="text/javascript">
+  	const room =["roomOne","roomTwo","roomThree"];
+     document.getElementById("array15").innerHTML="the default array is : "+room;
+  	document.getElementById("array13").innerHTML="Sorting the array in js  : " +room.sort()
+  	document.getElementById("array14").innerHTML="sorting the array in reverse ordr : "+room.reverse();
+  </script>
+
+
+<h4>Numeric sort in js</h4>
+<button type="button" onclick="jsFun2()">sort it!</button>
+<p id="array16"></p>
+<p id="array17"></p>
+<p id="array18"></p>
+<script type="text/javascript">
+	const point = [2,35,89,78,1];
+	document.getElementById("array16").innerHTML="the defalut value is: "+point;
+    
+    function jsFun2(){
+    	point.sort(function(a,b){return a-b});
+    	document.getElementById("array16").innerHTML="the sorted number are: "+ point ;
+    	document.getElementById("array17").innerHTML="the lowest number is : "+point[0];
+    	document.getElementById("array18").innerHTML="the largest number is: "+point[point.length-1];
+    }
+</script>
+
+<h4>for each loop in js</h4>
+<p id="array20"></p>
+<p id="array19"></p>
+<script type="text/javascript">
+	const numberIn =[2 , 5, 8, 56, 56,2];
+	document.getElementById("array20").innerHTML="normal inner html " +numberIn ;
+
+	let txt2 ="";
+	numberIn.forEach(Spring);
+	document.getElementById("array19").innerHTML= txt2;
+
+	function Spring(value){
+		txt2 = txt2 + value + "<br>";
+	}
+</script>
+
+
+<p id="array21"></p>
+<script type="text/javascript">
+	const day =[1 , 14 , 17 ,53];
+   const day1 =day.map(Myfun3);
+   document.getElementById('array21').innerHTML="the value of day1 is: "+day1;
+
+   function Myfun3(value,index,array){
+     return value * 2;
+
+   }
+</script>
+
+
+<h3>We can put multiple value inside our for loop</h3>
+
+<p id="array22"></p>
+<script type="text/javascript">
+	const war =["first","second","third","forth"];
+	let iM ,lenF ,text5;
+
+	for (iM =0,lenF =war.length,text5="";i<lenF ;iM++){
+		text5 += war[iM] + "<br>";
+	}
+	document.getElementById('array22').innerHTML=text5;
+</script>
+
+
+
+
+
+
+</body>
+</html>

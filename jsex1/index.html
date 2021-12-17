@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>js string</title>
+</head>
+<body>
+    <p id="demo"> </p>
+    <script type="text/javascript">
+    	let x =' '
+    	document.getElementById('demo').innerHTML=typeof x;
+    </script>
+
+    <p id="test"></p>
+    <script type="text/javascript">
+    	let name = 'he says he is "john"';
+    	document.getElementById('test').innerHTML=name;
+
+    </script>
+
+    <p id="charger"></p>
+    <script type="text/javascript">
+    	
+    	let Name = "abcdefghijklmnopqrstuvwxyz";
+        document.getElementById("charger").innerHTML=Name.length ;
+        	
+
+    </script>
+
+
+    <p id="glass"></p>
+    <script type="text/javascript">
+    	let test ="this is qouble quote \'string\" \n    it\'s is allright.  \n   And this is backslash in \\string ";
+    	document.getElementById('glass').innerHTML=test;
+    </script>
+
+
+    <h3>String can be object as well</h3>
+    <p id="wizard"></p>
+    <script type="text/javascript">
+    	let num2 = "john";
+    	let num3 = new String ("john");
+    	document.getElementById("wizard").innerHTML=typeof num3 +" " + (num2 == num3)
+    	+" "+ (num2 === num3);
+    </script>
+
+
+    <h4>Compairing two js object always return false</h4>
+    <p id="box"></p>
+    <script >
+    	let desk1 =new String ("ram");
+    	let desk2 =new String ("ram");
+
+    	document.getElementById("box").innerHTML=(desk2 === desk1);
+    </script>
+
+    <button type="button" onclick="document.getElementById('water').innerHTML=Date();">the date is!</button>
+    <p id="water"></p>
+
+
+
+    <!--string methods-->
+    <h2>String methods</h2>
+    <h4>Slice method</h4>
+    <p id="tea"></p>
+    <script type="text/javascript">
+    	let str ="apple ,banana ,lays ,hello , world" ;
+    	document.getElementById("tea").innerHTML=str.slice(-34);
+    </script>
+
+    <h4>substring method</h4>
+    <p>substring is similar to the slice but it can not accept negative value</p>
+    <p id="morning"></p>
+    <script >
+    	let str5 ="apple , morning , night ,keyboard";
+    	document.getElementById('morning').innerHTML= str5.substring(2 , 15);
+    </script>
+
+
+
+    <h4>substr() method</h4>
+    <p>it is similar to the slice but second parameter of substr is length of the world for eg.</p>
+
+    <p id="noon"></p>
+    <script type="text/javascript">
+    	let str6 = "apple ,banana ,juice ,sun";
+    	document.getElementById("noon").innerHTML =str6.substr(-5);
+    </script>
+
+
+
+    <button type="button" onclick="myFun2()">try it!</button>
+
+     <p id="google"> visit our office !</p>
+    <script >
+    	function myFun2() {
+    	let text7 =document.getElementById("google").innerHTML;
+    	document.getElementById("google").innerHTML=text7.replace("office","office2ASAS");
+    }
+    </script>
+
+    <h4>Coverting a string to uppercase and lowercase</h4>
+
+    <p id="yahoo"></p>
+    <script type="text/javascript">
+    	let text5= "this is some string in lowercase";
+    	let text4 = text5.toUpperCase();
+    	document.getElementById('yahoo').innerHTML=text4;
+    </script>
+
+    <p id="ffff"></p>
+    <h3>String search</h3>
+    <script type="text/javascript">
+    	let str8 ="ram ,mohan ,copy ,pen";
+
+    	document.getElementById('ffff').innerHTML=str8.includes('y');
+    </script>
+
+
+
+
+<button type="button" onclick="organizedFruit()">Try it!</button>
+<p id="sunset"></p>
+<script type="text/javascript">
+	let fruits =["mango","orange","apple"];
+	document.getElementById("sunset").innerHTML=fruits;
+
+	function organizedFruit() {
+		fruits.sort();
+		document.getElementById("sunset").innerHTML=fruits ;
+	}
+</script>
+
+</body>
+</html>

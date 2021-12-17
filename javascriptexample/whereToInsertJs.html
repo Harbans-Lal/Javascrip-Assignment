@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Where to insert JS!</title>
+
+<script type="text/javascript">
+    function jsfun(){
+		document.getElementById('eg1').innerHTML="this scrript is written in the head section";
+	}
+</script>	
+</head>
+<body>
+	<h1>Where to insert JS ?</h1>
+
+	<h3>Inerting js in Head section</h3>
+	<p id="eg1">this is content in html p tag and will be change by js when i click the button and the button sript is written at the head section!</p>
+
+	<button type="button" onclick="jsfun()">click here to chnage your content !</button>
+
+
+
+
+
+	<h3>Script inside the body !</h3>
+	<p id="eg2">this is a para and it will be change when i click on button and button script is inside the bodty!</p>
+	<button type="button" onclick="jsfun1()">CLick here to change the content!</button>
+
+	<script type="text/javascript">
+		function jsfun1(){
+			document.getElementById('eg2').innerHTML="this script is written inside the body tage!";
+		}
+	</script>
+
+
+
+	<h4>We can alos use external file and link that file via script tag within src attribute !</h4>
+	<h4>WE can alo link the external file via link, like www.wseshfjdshf.js this link willl alos goes inside the script tag and src attribute !</h4>
+	<h4>And also we can insett the file via external file like src="/js/hfkjhdksjh.js"</h4>
+
+</body>
+</html>

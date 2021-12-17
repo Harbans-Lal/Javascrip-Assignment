@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Javascript event and function !!</title>
+</head>
+<body>
+<p id="one"></p>
+<script type="text/javascript">
+	var num = 2;
+	for(let i=1;i<=10;i++){
+		console.log("2 * 1 ="+num*i);
+		document.write("2 * "+i + "=" +num*i+"<br>");
+		document.getElementById("one").innerHTML="2 * "+i + "=" +num*i+"<br>";
+		
+	}
+</script>
+
+
+
+<p>How to get the value of a textbox using an event then set this value in next input box?</p>
+<p id="output"></p>
+<input type="text" name="input1" id="iputOne" placeholder="first input field">
+<input type="text" name="input2" id="ipuTwo" placeholder="second input field">
+
+<button type="button">Submit</button>
+
+<script type="text/javascript">
+	let varOne = document.getElementById("iputOne").value;
+	 document.getElementById("ipuTwo").value =varOne;
+</script>
+
+<p>How to get text area text using an event?</p>
+
+<input type="text" name="one" placeholder="we havae a texarea here" id="two">
+<button type="button" onclick="funONe()">onClick</button>
+
+<script type="text/javascript">
+	function funONe(){
+		let text  = document.getElementById("two");
+	let value = text.value;
+	document.getElementById("pen").innerHTML = "the value is : "+value;
+	}
+	
+</script>
+
+<p id="pen"></p>
+
+
+<h4>crate a javascript calculator using javascript!!</h4>
+<!-- <p id="additon"></p>
+<p id="subtraction"></p>
+<p id="multiplication"></p>
+<p id="division"></p>
+
+document
+
+<script type="text/javascript">
+
+	function add(a,b){
+       return a+b;
+
+	}
+	function sub(a,b){
+       return a-b;
+	}
+	function mul(a,b){
+     return a*b;
+	}
+	function div(a,b){
+      return a/b;
+	}
+</script> -->
+
+<p id="addOutput"></p>
+<p id="subOutput"></p>
+<p id="mulOutput"></p>
+<p id="divOutput"></p>
+<script type="text/javascript">
+	let additon  = add(5,8);
+	document.getElementById("addOutput").innerHTML=
+	"the sum of 5 and 8 is: "+additon;
+
+	function add(x,y){
+		return x+y;
+	}
+
+	let subTraction  = sub(8,5);
+	document.getElementById("subOutput").innerHTML= "the subTraction of 8 and 5 is: "+subTraction;
+	function sub(x,y){
+		return x-y;
+	}
+	let mulTiplication = mul(5,8);
+	document.getElementById("mulOutput").innerHTML="the mulTiplication of 5 and 8 is: "+mulTiplication;
+	function  mul(x,y){
+		return x*y;
+	}
+	let division = div(10,5);
+	document.getElementById("divOutput").innerHTML="the division of 10 / 5 is: "+division;
+	
+	function div(x,y){
+      return x/y;
+	}
+</script>
+
+
+
+
+</body>
+</html>
